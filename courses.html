@@ -1,0 +1,2109 @@
+<!DOCTYPE html>
+
+<html lang="zxx">
+
+<head>
+    <!-- meta tag -->
+    <meta charset="utf-8" />
+    <title>EduCadTech - Education HTML Template</title>
+    <meta content="" name="description" />
+    <!-- responsive tag -->
+    <meta content="ie=edge" http-equiv="x-ua-compatible" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <!-- favicon -->
+    <link href="apple-touch-icon.png" rel="apple-touch-icon" />
+    <link href="assets/images/fav-orange.png" rel="shortcut icon" type="image/x-icon" />
+    <!-- Bootstrap v4.4.1 css -->
+    <!-- font-awesome css -->
+    <!-- animate css -->
+    <!-- off canvas css -->
+    <!-- linea-font css -->
+    <!-- flaticon css  -->
+    <!-- Main Menu css -->
+    <!-- spacing css -->
+    <!-- style css -->
+    <!-- This stylesheet dynamically changed from style.less -->
+    <!-- responsive css -->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body class="defult-home">
+    <!--Preloader area start here-->
+    <div class="loader orange-color" id="loader">
+        <div class="loader-container">
+            <div class="loader-icon">
+                <img alt="EduCadTech Logo" src="images/logo.png" />
+            </div>
+        </div>
+    </div>
+    <!--Preloader area End here-->
+    <!--Full width header Start-->
+    <div class="full-width-header header-style1 home8-style4">
+        <!--Header Start-->
+        <header class="rs-header" id="rs-header">
+            <!-- Topbar Area Start -->
+            <!-- Topbar Area End -->
+            <!-- Menu Start -->
+            <div class="menu-area menu-sticky">
+                <div class="container">
+                    <div class="row y-middle">
+                        <div class="col-lg-2">
+                            <div class="logo-cat-wrap">
+                                <div class="logo-part">
+                                    <a href="index.html">
+                                        <img alt="EduCadTech Logo" src="images/logo.png" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 text-right">
+                            <div class="rs-menu-area">
+                                <div class="main-menu">
+                                    <div class="mobile-menu">
+                                        <a class="rs-menu-toggle">
+                                            <i class="fa fa-bars"></i>
+                                        </a>
+                                    </div>
+                                    <nav class="rs-menu">
+                                        <ul class="nav-menu">
+                                            <li class=""><a href="index.html">Home</a></li>
+                                            <li class=""><a href="about.html">About</a></li>
+                                            <li class="current-menu-item"><a href="courses.html">Courses</a></li>
+                                            <li class=""><a href="verify.html">Verify-Certificate</a></li>
+                                            <li class=""><a href="contact.html">Contact</a></li>
+                                        </ul> <!-- //.nav-menu -->
+                                    </nav>
+                                </div> <!-- //.main-menu -->
+                            </div>
+                        </div>
+                        <div class="col-lg-2 text-right">
+                            <div class="expand-btn-inner">
+                                <ul>
+                                </ul>
+                                <a class="nav-expander style2" id="nav-expander">
+                                    <span class="dot1"></span>
+                                    <span class="dot2"></span>
+                                    <span class="dot3"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Menu End -->
+        </header>
+        <!--Header End-->
+    </div>
+    <!--Full width header End-->
+    <!-- Main content Start -->
+    <div class="main-content">
+        <!-- Breadcrumbs Start -->
+        <div class="rs-breadcrumbs breadcrumbs-overlay">
+            <div class="breadcrumbs-img">
+                <img alt="Breadcrumbs Image" src="assets/images/breadcrumbs/2.jpg" />
+            </div>
+            <div class="breadcrumbs-text white-color">
+                <h1 class="page-title">Course Grid </h1>
+                <ul>
+                    <li>
+                        <a class="active" href="index.html">Home</a>
+                    </li>
+                    <li>Course</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Breadcrumbs End -->
+        <!-- Popular Courses Section Start -->
+        <div class="rs-popular-courses style1 orange-color pt-100 md-pt-70" id="rs-popular-courses">
+            <div class="container">
+                <div class="d-flex justify-content-between flex-wrap mb-50">
+                    <div class="gridFilter text-left mb-3 mb-md-0" id="branchFilter">
+                        <button class="active" data-filter="*">ALL</button>
+                        <button data-filter=".filter1">MECH</button>
+                        <button data-filter=".filter2">CIVIL</button>
+                        <button data-filter=".filter3">ECE</button>
+                        <button data-filter=".filter4">EEE</button>
+                        <button data-filter=".filter5">CSE</button>
+                        <button data-filter=".filter6">IT</button>
+                    </div>
+                    <div class="text-right">
+                        <div class="dropdown">
+                            <button aria-expanded="false" aria-haspopup="true" class="btn btn-secondary dropdown-toggle"
+                                data-toggle="dropdown" id="courseTypeDropdown"
+                                style="background-color: #ff5421; border-color: #ff5421; font-weight: 500; cursor: pointer;"
+                                type="button">
+                                Course Type
+                            </button>
+                            <div aria-labelledby="courseTypeDropdown"
+                                class="dropdown-menu dropdown-menu-right gridFilter" id="typeFilter"
+                                style="padding: 0; min-width: 200px;">
+                                <button class="dropdown-item active" data-filter="*"
+                                    style="width: 100%; border: none; background: transparent; padding: 10px 20px; text-align: left; cursor: pointer;">ALL</button>
+                                <button class="dropdown-item" data-filter=".technical"
+                                    style="width: 100%; border: none; background: transparent; padding: 10px 20px; text-align: left; cursor: pointer;">Technical
+                                    Course</button>
+                                <button class="dropdown-item" data-filter=".softskill"
+                                    style="width: 100%; border: none; background: transparent; padding: 10px 20px; text-align: left; cursor: pointer;">Soft
+                                    Skill Course</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row grid">
+                    <div class="col-lg-4 col-md-6 grid-item filter1 technical">
+                        <div class="courses-item mb-30">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/1. mechanical draftman.jpg" />
+                            </div>
+                            <div class="content-part">
+                                <ul class="meta-part">
+                                    <li><a class="categorie">Technical Course</a></li>
+                                </ul>
+                                <h3 class="title">Mechanical Draftsman</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-part">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter1 technical">
+                        <div class="courses-item mb-30">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/2. Design Engineer.png" />
+                            </div>
+                            <div class="content-part">
+                                <ul class="meta-part">
+                                    <li><a class="categorie">Technical Course</a></li>
+                                </ul>
+                                <h3 class="title">Design Engineer</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-part">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter1 technical">
+                        <div class="courses-item mb-30">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/3. Manufacturing Engineer.png" />
+                            </div>
+                            <div class="content-part">
+                                <ul class="meta-part">
+                                    <li><a class="categorie">Technical Course</a></li>
+                                </ul>
+                                <h3 class="title">Manufacturing Engineer</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-part">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter1 technical">
+                        <div class="courses-item mb-30">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/4. CFD Analysis.png" />
+                            </div>
+                            <div class="content-part">
+                                <ul class="meta-part">
+                                    <li><a class="categorie">Technical Course</a></li>
+                                </ul>
+                                <h3 class="title">CFD Analyst</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-part">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter1 technical">
+                        <div class="courses-item mb-30">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/5. Quality Engineer.png" />
+                            </div>
+                            <div class="content-part">
+                                <ul class="meta-part">
+                                    <li><a class="categorie">Technical Course</a></li>
+                                </ul>
+                                <h3 class="title">Quality Engineer</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-part">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter1 technical">
+                        <div class="courses-item mb-30">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/6. Planning Engineer.png" />
+                            </div>
+                            <div class="content-part">
+                                <ul class="meta-part">
+                                    <li><a class="categorie">Technical Course</a></li>
+                                </ul>
+                                <h3 class="title">Planning Engineer</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-part">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter1 technical">
+                        <div class="courses-item mb-30">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/7. Automation Engineer.png" />
+                            </div>
+                            <div class="content-part">
+                                <ul class="meta-part">
+                                    <li><a class="categorie">Technical Course</a></li>
+                                </ul>
+                                <h3 class="title">Automation Engineer</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-part">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter1 technical">
+                        <div class="courses-item mb-30">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/8. 3D printing Engineer.png" />
+                            </div>
+                            <div class="content-part">
+                                <ul class="meta-part">
+                                    <li><a class="categorie">Technical Course</a></li>
+                                </ul>
+                                <h3 class="title">3D Printing Engineer</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-part">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter1 softskill">
+                        <div class="courses-item mb-30">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/9. Auto CAD.png" />
+                            </div>
+                            <div class="content-part">
+                                <ul class="meta-part">
+                                    <li><a class="categorie">Soft Skill Course</a></li>
+                                </ul>
+                                <h3 class="title">AutoCAD</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-part">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter1 softskill">
+                        <div class="courses-item mb-30">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/10. CATIA.png" />
+                            </div>
+                            <div class="content-part">
+                                <ul class="meta-part">
+                                    <li><a class="categorie">Soft Skill Course</a></li>
+                                </ul>
+                                <h3 class="title">CATIA</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-part">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter1 softskill">
+                        <div class="courses-item mb-30">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/11. CNC Programming.png" />
+                            </div>
+                            <div class="content-part">
+                                <ul class="meta-part">
+                                    <li><a class="categorie">Soft Skill Course</a></li>
+                                </ul>
+                                <h3 class="title">CNC Programming</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-part">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter1 softskill">
+                        <div class="courses-item mb-30">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/12. CREO.png" />
+                            </div>
+                            <div class="content-part">
+                                <ul class="meta-part">
+                                    <li><a class="categorie">Soft Skill Course</a></li>
+                                </ul>
+                                <h3 class="title">Creo</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-part">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter1 softskill">
+                        <div class="courses-item mb-30">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/13. NX CAD.png" />
+                            </div>
+                            <div class="content-part">
+                                <ul class="meta-part">
+                                    <li><a class="categorie">Soft Skill Course</a></li>
+                                </ul>
+                                <h3 class="title">NX CAD</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-part">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter1 softskill">
+                        <div class="courses-item mb-30">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/14. Solid Works.png" />
+                            </div>
+                            <div class="content-part">
+                                <ul class="meta-part">
+                                    <li><a class="categorie">Soft Skill Course</a></li>
+                                </ul>
+                                <h3 class="title">SolidWorks</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-part">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter1 softskill">
+                        <div class="courses-item mb-30">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/15. ANYSIS .png" />
+                            </div>
+                            <div class="content-part">
+                                <ul class="meta-part">
+                                    <li><a class="categorie">Soft Skill Course</a></li>
+                                </ul>
+                                <h3 class="title">ANSYS Workbench</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-part">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row grid">
+                    <div class="col-lg-4 col-md-6 grid-item filter2 technical">
+                        <div class="courses-item mb-30">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/16. Advanced Land Surveyor.png" />
+                            </div>
+                            <div class="content-part">
+                                <ul class="meta-part">
+                                    <li><a class="categorie">Technical Course</a></li>
+                                </ul>
+                                <h3 class="title">Advanced Land Surveyor</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-part">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter2 technical">
+                        <div class="courses-item mb-30">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/17. Supervisor.png" />
+                            </div>
+                            <div class="content-part">
+                                <ul class="meta-part">
+                                    <li><a class="categorie">Technical Course</a></li>
+                                </ul>
+                                <h3 class="title">Construction Supervisor</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-part">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter2 technical">
+                        <div class="courses-item mb-30">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/18. Civil Engg Draftman.png" />
+                            </div>
+                            <div class="content-part">
+                                <ul class="meta-part">
+                                    <li><a class="categorie">Technical Course</a></li>
+                                </ul>
+                                <h3 class="title">Civil Engg Draftsman</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-part">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter2 technical">
+                        <div class="courses-item mb-30">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/19. Structural Designer.png" />
+                            </div>
+                            <div class="content-part">
+                                <ul class="meta-part">
+                                    <li><a class="categorie">Technical Course</a></li>
+                                </ul>
+                                <h3 class="title">Structural Designer</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-part">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter2 technical">
+                        <div class="courses-item mb-30">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/5. Quality Engineer.png" />
+                            </div>
+                            <div class="content-part">
+                                <ul class="meta-part">
+                                    <li><a class="categorie">Technical Course</a></li>
+                                </ul>
+                                <h3 class="title">Quality Engineer</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-part">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter2 technical">
+                        <div class="courses-item mb-30">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/20. Interior Designer.png" />
+                            </div>
+                            <div class="content-part">
+                                <ul class="meta-part">
+                                    <li><a class="categorie">Technical Course</a></li>
+                                </ul>
+                                <h3 class="title">Interior Designer</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-part">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter2 technical">
+                        <div class="courses-item mb-30">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/21. Quality Surveyor.png" />
+                            </div>
+                            <div class="content-part">
+                                <ul class="meta-part">
+                                    <li><a class="categorie">Technical Course</a></li>
+                                </ul>
+                                <h3 class="title">Quantity Surveyor</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-part">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter2 technical">
+                        <div class="courses-item mb-30">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/6. Planning Engineer.png" />
+                            </div>
+                            <div class="content-part">
+                                <ul class="meta-part">
+                                    <li><a class="categorie">Technical Course</a></li>
+                                </ul>
+                                <h3 class="title">Planning Engineer</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-part">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter2 softskill">
+                        <div class="courses-item mb-30">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/9. Auto CAD.png" />
+                            </div>
+                            <div class="content-part">
+                                <ul class="meta-part">
+                                    <li><a class="categorie">Soft Skill Course</a></li>
+                                </ul>
+                                <h3 class="title">AutoCAD</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-part">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter2 softskill">
+                        <div class="courses-item mb-30">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/22. Revit.png" />
+                            </div>
+                            <div class="content-part">
+                                <ul class="meta-part">
+                                    <li><a class="categorie">Soft Skill Course</a></li>
+                                </ul>
+                                <h3 class="title">REVIT</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-part">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter2 softskill">
+                        <div class="courses-item mb-30">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/23. 3D max.png" />
+                            </div>
+                            <div class="content-part">
+                                <ul class="meta-part">
+                                    <li><a class="categorie">Soft Skill Course</a></li>
+                                </ul>
+                                <h3 class="title">3ds MAX</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-part">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter2 softskill">
+                        <div class="courses-item mb-30">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/24. STAAD Pro.png" />
+                            </div>
+                            <div class="content-part">
+                                <ul class="meta-part">
+                                    <li><a class="categorie">Soft Skill Course</a></li>
+                                </ul>
+                                <h3 class="title">STAAD Pro</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-part">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter2 softskill">
+                        <div class="courses-item mb-30">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/25. ETABS.png" />
+                            </div>
+                            <div class="content-part">
+                                <ul class="meta-part">
+                                    <li><a class="categorie">Soft Skill Course</a></li>
+                                </ul>
+                                <h3 class="title">ETABS</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-part">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter2 softskill">
+                        <div class="courses-item mb-30">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/26. Primavera.png" />
+                            </div>
+                            <div class="content-part">
+                                <ul class="meta-part">
+                                    <li><a class="categorie">Soft Skill Course</a></li>
+                                </ul>
+                                <h3 class="title">Primavera</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn-part">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter4 softskill mb-30">
+                        <div class="courses-item">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/27. Electrical CAAD.png" />
+                            </div>
+                            <div class="content-part">
+                                <ul class="meta-part">
+                                    <li><a class="categorie">Soft Skill Course</a></li>
+                                </ul>
+                                <h3 class="title">Electrical CADD</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <div class="btn-part">
+                                        </div>
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter4 technical mb-30">
+                        <div class="courses-item">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/28. MATLAB.png" />
+                            </div>
+                            <div class="content-part">
+                                <h3 class="title">MATLAB-Simulink</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <div class="btn-part">
+                                        </div>
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter4 technical mb-30">
+                        <div class="courses-item">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/29. Robotics.png" />
+                            </div>
+                            <div class="content-part">
+                                <h3 class="title">Robotics</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <div class="btn-part">
+                                        </div>
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter4 technical mb-30">
+                        <div class="courses-item">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/30. Instrumentation.png" />
+                            </div>
+                            <div class="content-part">
+                                <h3 class="title">Instrumentation</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <div class="btn-part">
+                                        </div>
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter4 technical mb-30">
+                        <div class="courses-item">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/31. Embedded.png" />
+                            </div>
+                            <div class="content-part">
+                                <h3 class="title">Embedded</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <div class="btn-part">
+                                        </div>
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter4 technical mb-30">
+                        <div class="courses-item">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/32. PCB.png" />
+                            </div>
+                            <div class="content-part">
+                                <h3 class="title">PCB Design</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <div class="btn-part">
+                                        </div>
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter3 technical mb-30">
+                        <div class="courses-item">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/33. VLSI.png" />
+                            </div>
+                            <div class="content-part">
+                                <h3 class="title">VLSI</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <div class="btn-part">
+                                        </div>
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter3 technical mb-30">
+                        <div class="courses-item">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/31. Embedded.png" />
+                            </div>
+                            <div class="content-part">
+                                <h3 class="title">Embedded</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <div class="btn-part">
+                                        </div>
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter3 technical mb-30">
+                        <div class="courses-item">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/32. PCB.png" />
+                            </div>
+                            <div class="content-part">
+                                <h3 class="title">PCB Design</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <div class="btn-part">
+                                        </div>
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter3 technical mb-30">
+                        <div class="courses-item">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/29. Robotics.png" />
+                            </div>
+                            <div class="content-part">
+                                <h3 class="title">Robotics</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <div class="btn-part">
+                                        </div>
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter3 technical mb-30">
+                        <div class="courses-item">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/34. Networking .png" />
+                            </div>
+                            <div class="content-part">
+                                <h3 class="title">Networking-CCNA</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <div class="btn-part">
+                                        </div>
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter3 technical mb-30">
+                        <div class="courses-item">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/35. Networking-Mcsc.png" />
+                            </div>
+                            <div class="content-part">
+                                <h3 class="title">Networking -MCSC</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <div class="btn-part">
+                                        </div>
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter3 technical mb-30">
+                        <div class="courses-item">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/28. MATLAB.png" />
+                            </div>
+                            <div class="content-part">
+                                <h3 class="title">MATLAB</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <div class="btn-part">
+                                        </div>
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 45</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter5 technical mb-30">
+                        <div class="courses-item">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/36. C.png" />
+                            </div>
+                            <div class="content-part">
+                                <h3 class="title">C</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <div class="btn-part">
+                                        </div>
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter5 technical mb-30">
+                        <div class="courses-item">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/37. C++.png" />
+                            </div>
+                            <div class="content-part">
+                                <h3 class="title">C++</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <div class="btn-part">
+                                        </div>
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter5 technical mb-30">
+                        <div class="courses-item">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/38. Java.png" />
+                            </div>
+                            <div class="content-part">
+                                <h3 class="title">Core Java</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <div class="btn-part">
+                                        </div>
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter5 technical mb-30">
+                        <div class="courses-item">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/39. Advance java.png" />
+                            </div>
+                            <div class="content-part">
+                                <h3 class="title">Advance Java</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <div class="btn-part">
+                                        </div>
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter5 technical mb-30">
+                        <div class="courses-item">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/40. web designing.png" />
+                            </div>
+                            <div class="content-part">
+                                <h3 class="title">Web Designing</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <div class="btn-part">
+                                        </div>
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter5 technical mb-30">
+                        <div class="courses-item">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/41. PHP.png" />
+                            </div>
+                            <div class="content-part">
+                                <h3 class="title">PHP</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <div class="btn-part">
+                                        </div>
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter5 technical mb-30">
+                        <div class="courses-item">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/42. SQL.png " />
+                            </div>
+                            <div class="content-part">
+                                <h3 class="title">SQL</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <div class="btn-part">
+                                        </div>
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter5 technical mb-30">
+                        <div class="courses-item">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/43. Oracle.png" />
+                            </div>
+                            <div class="content-part">
+                                <h3 class="title">Oracle</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <div class="btn-part">
+                                        </div>
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter5 technical mb-30">
+                        <div class="courses-item">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/44. Android.png" />
+                            </div>
+                            <div class="content-part">
+                                <h3 class="title">Android</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <div class="btn-part">
+                                        </div>
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter5 technical mb-30">
+                        <div class="courses-item">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/45. .NET.png" />
+                            </div>
+                            <div class="content-part">
+                                <h3 class="title">.NET</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <div class="btn-part">
+                                        </div>
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter5 technical mb-30">
+                        <div class="courses-item">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/46. Hadoop.png" />
+                            </div>
+                            <div class="content-part">
+                                <h3 class="title">Hadoop</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <div class="btn-part">
+                                        </div>
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter5 technical mb-30">
+                        <div class="courses-item">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/47. R Language.png" />
+                            </div>
+                            <div class="content-part">
+                                <h3 class="title">R-Language</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <div class="btn-part">
+                                        </div>
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter5 technical mb-30">
+                        <div class="courses-item">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/48. Animation.png" />
+                            </div>
+                            <div class="content-part">
+                                <h3 class="title">Animation</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <div class="btn-part">
+                                        </div>
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter6 technical mb-30">
+                        <div class="courses-item">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/36. C.png" />
+                            </div>
+                            <div class="content-part">
+                                <h3 class="title">C</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <div class="btn-part">
+                                        </div>
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter6 technical mb-30">
+                        <div class="courses-item">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/37. C++.png" />
+                            </div>
+                            <div class="content-part">
+                                <h3 class="title">C++</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <div class="btn-part">
+                                        </div>
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter6 technical mb-30">
+                        <div class="courses-item">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/40. web designing.png" />
+                            </div>
+                            <div class="content-part">
+                                <h3 class="title">Web Designing</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <div class="btn-part">
+                                        </div>
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter6 technical mb-30">
+                        <div class="courses-item">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/41. PHP.png" />
+                            </div>
+                            <div class="content-part">
+                                <h3 class="title">PHP</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <div class="btn-part">
+                                        </div>
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter6 technical mb-30">
+                        <div class="courses-item">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/42. SQL.png" />
+                            </div>
+                            <div class="content-part">
+                                <h3 class="title">SQL</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <div class="btn-part">
+                                        </div>
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter6 technical mb-30">
+                        <div class="courses-item">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/43. Oracle.png" />
+                            </div>
+                            <div class="content-part">
+                                <h3 class="title">Oracle</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <div class="btn-part">
+                                        </div>
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter6 technical mb-30">
+                        <div class="courses-item">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/44. Android.png" />
+                            </div>
+                            <div class="content-part">
+                                <h3 class="title">Android</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <div class="btn-part">
+                                        </div>
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter6 technical mb-30">
+                        <div class="courses-item">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/34. Networking .png" />
+                            </div>
+                            <div class="content-part">
+                                <h3 class="title">Networking-CCNA</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <div class="btn-part">
+                                        </div>
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter6 technical mb-30">
+                        <div class="courses-item">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/35. Networking-Mcsc.png" />
+                            </div>
+                            <div class="content-part">
+                                <h3 class="title">Networking-MCSC</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <div class="btn-part">
+                                        </div>
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter6 technical mb-30">
+                        <div class="courses-item">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/45. .NET.png" />
+                            </div>
+                            <div class="content-part">
+                                <h3 class="title">.NET</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <div class="btn-part">
+                                        </div>
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter6 technical mb-30">
+                        <div class="courses-item">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/46. Hadoop.png" />
+                            </div>
+                            <div class="content-part">
+                                <h3 class="title">Hadoop</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <div class="btn-part">
+                                        </div>
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter6 technical mb-30">
+                        <div class="courses-item">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/47. R Language.png" />
+                            </div>
+                            <div class="content-part">
+                                <h3 class="title">R-Language</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <div class="btn-part">
+                                        </div>
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 grid-item filter6 technical mb-30">
+                        <div class="courses-item">
+                            <div class="img-part">
+                                <img alt="" src="assets/images/courses/49. Tally.png" />
+                            </div>
+                            <div class="content-part">
+                                <h3 class="title">Tally</h3>
+                                <div class="bottom-part">
+                                    <div class="info-meta">
+                                        <div class="btn-part">
+                                        </div>
+                                        <ul>
+                                            <li class="user"><i class="fa fa-user"></i> 245</li>
+                                            <li class="ratings">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                (05)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popular Courses Section End -->
+    <!-- Newsletter section start -->
+    <!-- Newsletter section end -->
+    <!-- Main content End -->
+    <!-- Newsletter section start -->
+    <div class="rs-newsletter style1 orange-color mb--90 sm-mb-0 sm-pb-70">
+        <div class="container">
+            <div class="newsletter-wrap">
+                <div class="row y-middle">
+                    <div class="col-lg-6 col-md-12 md-mb-30">
+                        <div class="content-part">
+                            <div class="sec-title">
+                                <div class="title-icon md-mb-15">
+                                    <img alt="images" src="assets/images/newsletter.png" />
+                                </div>
+                                <h2 class="title mb-0 white-color"> Feel Free To Contact</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="btn-part">
+                            <a class="readon orange-btn transparent" href="contact.html">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Newsletter section end -->
+    <!-- Footer Start -->
+    <footer class="rs-footer home9-style main-home" id="rs-footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-12 col-sm-12 footer-widget md-mb-50">
+                        <div class="footer-logo mb-30">
+                            <a href="index.html"><img alt="EduCadTech Logo" src="images/logo.png" /></a>
+                        </div>
+                        <div class="textwidget pr-60 md-pr-15">
+                            <p class="white-color">We are EduCadTech, providing expert-led courses to help you advance
+                                your career. We empower learners with knowledge and practical skills.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-12 col-sm-12 footer-widget md-mb-50">
+                        <h3 class="widget-title">Quick Links</h3>
+                        <ul class="site-map">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="courses.html">Courses</a></li>
+                            <li><a href="verify.html">Verify Certificate</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-12 col-sm-12 footer-widget md-mb-50">
+                        <h3 class="widget-title">Contact Info</h3>
+                        <ul class="address-widget">
+                            <li>
+                                <i class="flaticon-location"></i>
+                                <div class="desc">374 William S Canning Blvd, River MA 2721, USA</div>
+                            </li>
+                            <li>
+                                <i class="flaticon-call"></i>
+                                <div class="desc">
+                                    <a href="tel:(+880)155-69569">(+880)155-69569</a>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="flaticon-email"></i>
+                                <div class="desc">
+                                    <a href="mailto:info@EduCadTech.com">info@EduCadTech.com</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-12 col-sm-12 footer-widget">
+                        <h3 class="widget-title">Social Media</h3>
+                        <ul class="footer_social">
+                            <li>
+                                <a href="#" target="_blank"><span><i class="fa fa-facebook"></i></span></a>
+                            </li>
+                            <li>
+                                <a href="# " target="_blank"><span><i class="fa fa-twitter"></i></span></a>
+                            </li>
+                            <li>
+                                <a href="# " target="_blank"><span><i class="fa fa-pinterest-p"></i></span></a>
+                            </li>
+                            <li>
+                                <a href="# " target="_blank"><span><i class="fa fa-google-plus-square"></i></span></a>
+                            </li>
+                            <li>
+                                <a href="# " target="_blank"><span><i class="fa fa-instagram"></i></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row y-middle">
+                    <div class="col-lg-12 text-center">
+                        <div class="copyright">
+                            <p>© 2026 EduCadTech. All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+    <!-- start scrollUp  -->
+    <div class="orange-color" id="scrollUp">
+        <i class="fa fa-angle-up"></i>
+    </div>
+    <!-- End scrollUp  -->
+    <!-- Search Modal Start -->
+    <div aria-hidden="true" class="modal fade search-modal" role="dialog" tabindex="-1">
+        <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+            <span class="flaticon-cross"></span>
+        </button>
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="search-block clearfix">
+                    <form>
+                        <div class="form-group">
+                            <input class="form-control" placeholder="Search Here..." type="text" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Search Modal End -->
+    <!-- modernizr js -->
+    <!-- jquery latest version -->
+    <!-- Popper js -->
+    <script crossorigin="anonymous"
+        integrity="sha512-ubuT8Z88WxezgSqf3RLuNi5lmjstiJcyezx34yIU2gAHonIi27Na7atqzUZCOoY4CExaoFumzOsFQ2Ch+I/HCw=="
+        referrerpolicy="no-referrer"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <!-- Bootstrap v4.4.1 js -->
+    <!-- Menu js -->
+    <!-- op nav js -->
+    <!-- wow js -->
+    <!-- isotope.pkgd.min js -->
+    <!-- imagesloaded.pkgd.min js -->
+    <!-- plugins js -->
+    <!-- magnific popup js -->
+    <!-- contact form js -->
+    <!-- main js -->
+    <script src="js/script.js"></script><a href="https://wa.me/919944423978" id="whatsapp-btn"
+        style="position:fixed; bottom:20px; left:20px; z-index:9999; background:#25D366; color:white; padding:10px 15px; border-radius:50px; font-size:24px; box-shadow: 2px 2px 10px rgba(0,0,0,0.2);"
+        target="_blank"><i class="fa fa-whatsapp"></i></a>
+</body>
+
+</html>
